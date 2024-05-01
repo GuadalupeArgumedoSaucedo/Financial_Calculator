@@ -7,7 +7,7 @@
     
     function calculateMortgage() {
         let p = Number(document.getElementById("loanField").value);
-        let r = Number(document.getElementById("intrestField").value);
+        let r = Number(document.getElementById("intrestField").value)/100;
         let t = Number(document.getElementById("yearsField").value);
         let n = 12;
     

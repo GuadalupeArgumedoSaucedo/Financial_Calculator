@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Present Value of Annuity Calculator</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Annuity Calculator</title>
 </head>
 <body>
   <div class="container">
-    <h1 class="mb-4">Present Value of Annuity Calculator</h1>
+    <h1>Annuity Calculator</h1>
     <form id="annuityForm">
       <div class="form-group">
-        <label for="monthlyPayout">Monthly Payout ($)</label>
-        <input type="number" class="form-control" id="monthlyPayout" step="0.01" required>
+        <label for="monthlyPayout">Deposit:</label>
+        <input type="number" class="form-control" id="monthlyPayout" required>
       </div>
       <div class="form-group">
-        <label for="interestRate">Expected Interest Rate (%)</label>
-        <input type="number" class="form-control" id="interestRate" step="0.001" required>
+        <label for="interestRate">Interest Rate:</label>
+        <input type="number" class="form-control" id="interestRate" step="0.0001" required>
       </div>
       <div class="form-group">
-        <label for="years">Years to Payout</label>
+        <label for="years">Years:</label>
         <input type="number" class="form-control" id="years" required>
       </div>
       <button type="submit" class="btn btn-primary">Calculate</button>
     </form>
-    <div id="result" class="mt-4"></div>
-  </div>
+    <div id="results">
+        <h3>Results</h3>
+        <p id="result">Needed today:</p>
+    </div>
 
   <script src="/OrdinaryAnnuity/app2.js"></script>
 </body>

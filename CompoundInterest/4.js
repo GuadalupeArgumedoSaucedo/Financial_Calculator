@@ -1,3 +1,5 @@
+"use strict"
+
 document.getElementById('interestForm').addEventListener('submit', function(event) {
     event.preventDefault();
   

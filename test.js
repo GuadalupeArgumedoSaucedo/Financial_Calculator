@@ -9,9 +9,7 @@ document.getElementById('annuityForm').addEventListener('submit', function(event
   
     let presentValue = calculatePresentValue(monthlyPayout, interestRate, years);
     
-    document.getElementById('result').textContent = 'Needed today: $' + presentValue.toFixed(2);
-    
-    document.getElementById('result').style.display = 'block';
+    document.getElementById('result').innerHTML = 'To fund an annuity that pays $' + monthlyPayout.toFixed(2) + ' monthly for ' + years + ' years and earns an expected ' + (interestRate * 100) + '% interest, you would need to invest $' + presentValue.toFixed(2) + ' today.';
   });
   
   function calculatePresentValue(monthlyPayout, interestRate, years) {
