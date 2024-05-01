@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Mortgage Calculator</h2>
+        <form id="mortgageForm">
+            <div class="form-group">
+                <label for="loanField">Loan amount:</label>
+                <input type="number" id="loanField" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="intrestField">Intrest Rate:</label>
+                <input type="number" id="intrestField" class="form-control" step="0.00001" required>
+            </div>
+            <div class="form-group">
+                <label for="yearsField">Years:</label>
+                <input type="number" id="yearsField" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+        <div id="results" style="display: none; margin-top: 20px;">
+            <h3>Results</h3>
+            <p id="resultm">Monthly Payment: $0.00</p>
+            <p id="resulti">Total Interest Paid: $0.00</p>
+        </div>
+
+    <script src="/calc2/app.js"></script>
+</body>
+</html>
+
+

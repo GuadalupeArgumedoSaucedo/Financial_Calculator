@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound Interest Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Compound Interest Calculator</h2>
+    <form id="interestForm">
+      <div class="form-group">
+        <label for="deposit">Initial Deposit ($)</label>
+        <input type="number" class="form-control" id="deposit" required>
+      </div>
+      <div class="form-group">
+        <label for="rate">Interest Rate (%)</label>
+        <input type="number" class="form-control" id="rate" step="0.0001" required>
+      </div>
+      <div class="form-group">
+        <label for="years">Number of Years</label>
+        <input type="number" class="form-control" id="years" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+    <div id="result" class="mt-3" style="display: none;">
+      <h3>Result</h3>
+      <p>Your CD's ending balance will be: <span id="futureValue"></span></p>
+      <p>You would have earned: <span id="interestEarned"></span> in interest</p>
+    </div>
+  </div>
+
+  <script src="/4/4.js"></script>
+</body>
+</html>
