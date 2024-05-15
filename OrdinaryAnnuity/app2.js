@@ -11,7 +11,7 @@ document.getElementById('annuityForm').addEventListener('submit', function(event
     
     document.getElementById('result').textContent = 'Needed today: $' + presentValue.toFixed(2);
     
-    document.getElementById('result').style.display = 'block';
+    document.getElementById('results').style.display = 'block';
   });
   
   function calculatePresentValue(monthlyPayout, interestRate, years) {
@@ -26,3 +26,10 @@ document.getElementById('annuityForm').addEventListener('submit', function(event
     return presentValue;
   }
   
+/*
+3000
+2.5
+20
+
+566141.46
+*/

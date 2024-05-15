@@ -22,3 +22,11 @@
         document.getElementById('results').style.display = 'block';
     }
     
+    /*
+    1000
+    1.75
+    5
+
+    about 1092
+    about 92
+    */

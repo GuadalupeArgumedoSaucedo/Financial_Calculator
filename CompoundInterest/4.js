@@ -18,3 +18,11 @@ document.getElementById('interestForm').addEventListener('submit', function(even
     document.getElementById('result').style.display = 'block';
   });
   
+  /*
+  53000
+  7.525
+  15
+
+  495.09
+  36115.99
+  */
